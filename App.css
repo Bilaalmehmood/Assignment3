@@ -1,0 +1,84 @@
+/* Updated CSS with gradient background and button styles */
+.App {
+  max-width: 1200px;
+  max-height: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient background */
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-right: 100px;
+  height: 30px;
+  width:150;
+
+}
+
+.priority {
+  margin-left: 150px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #cbe396, #fad0c4);
+}
+
+.priority.high {
+  background-color: #ff6b6b;
+}
+
+.priority.medium {
+  background-color: #ffd166;
+}
+
+.priority.low {
+  background-color: #a0dfed;
+}
+
+/* Button Styles */
+#abc {
+  background: linear-gradient(to right, #cbe396, #fad0c4); /* Gradient button color */
+  color: #bd2222;
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+#abc:hover {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient button hover color */
+}
+
+/* Add space between buttons */
+#abc + #abc {
+  margin-left: 40px;
+}
